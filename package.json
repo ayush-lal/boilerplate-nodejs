@@ -1,0 +1,33 @@
+{
+  "name": "boilerplate-typescript-nodejs",
+  "version": "1.0.0",
+  "description": "Boilerplate NodeJS Backend",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc --project ./",
+    "start": "node ./build/index.js",
+    "dev": "nodemon ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayush-lal/boilerplate-typescript-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayush-lal/boilerplate-typescript-nodejs/issues"
+  },
+  "homepage": "https://github.com/ayush-lal/boilerplate-typescript-nodejs#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.6",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
