@@ -3,8 +3,11 @@
     "module": "commonjs",
     "esModuleInterop": true,
     "target": "es6",
-    "rootDir": "src/",
+    // "rootDir": "./src",
     "outDir": "./build",
-    "strict": true
-  }
+    "strict": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./src/**/*"]
 }
