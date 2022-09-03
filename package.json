@@ -21,8 +21,11 @@
   },
   "homepage": "https://github.com/ayush-lal/boilerplate-typescript-nodejs#readme",
   "dependencies": {
+    "dayjs": "^1.11.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "pino": "^8.4.2",
+    "pino-pretty": "^9.1.0",
     "swagger-jsdoc": "^6.2.5",
     "swagger-ui-express": "^4.5.0"
   },
