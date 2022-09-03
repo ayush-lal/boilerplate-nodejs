@@ -1,11 +1,14 @@
 import express, { Request, Response } from "express";
 import { port } from "./configs/config";
-const app = express();
+import routes from "./routes";
+import log from "./utils/logger";
+import swaggerDocs from "./utils/swagger/";
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello World");
-});
+const app = express();
+app.use(express.json());
 
 app.listen(port, () => {
-  console.log(`The application is listening on port ${port}!`);
+  log.info(`The application is listening on port ${port}!`);
+  routes(app);
+  swaggerDocs(app, port!);
 });
